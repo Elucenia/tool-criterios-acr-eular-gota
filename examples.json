@@ -1,0 +1,173 @@
+[
+  {
+    "label": "Podagra, 3 características, crises recorrentes, urato 9: 10 pontos (gota)",
+    "input": {
+      "entrada": "1",
+      "cristal": "0",
+      "padrao": "2",
+      "caract": "3",
+      "curso": "2",
+      "tofo": "0",
+      "urato": "3",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 10,
+        "gota": 1
+      },
+      "level": "high"
+    },
+    "originalInput": {
+      "entrada": "1",
+      "cristal": "0",
+      "padrao": "2",
+      "caract": "3",
+      "curso": "2",
+      "tofo": "0",
+      "urato": "3",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Tornozelo, 1 característica, 1 episódio, urato 7: 5 pontos",
+    "input": {
+      "entrada": "1",
+      "cristal": "0",
+      "padrao": "1",
+      "caract": "1",
+      "curso": "1",
+      "tofo": "0",
+      "urato": "2",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 5,
+        "gota": 0
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "entrada": "1",
+      "cristal": "0",
+      "padrao": "1",
+      "caract": "1",
+      "curso": "1",
+      "tofo": "0",
+      "urato": "2",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Podagra, 2 características, recorrente, urato 7, líquido negativo: 6 pontos",
+    "input": {
+      "entrada": "1",
+      "cristal": "0",
+      "padrao": "2",
+      "caract": "2",
+      "curso": "2",
+      "tofo": "0",
+      "urato": "2",
+      "liquido": "-2",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expected": {
+      "raw": {
+        "score": 6,
+        "gota": 0
+      },
+      "level": "low"
+    },
+    "originalInput": {
+      "entrada": "1",
+      "cristal": "0",
+      "padrao": "2",
+      "caract": "2",
+      "curso": "2",
+      "tofo": "0",
+      "urato": "2",
+      "liquido": "-2",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Cristais de urato no líquido sinovial: gota (critério suficiente)",
+    "input": {
+      "entrada": "1",
+      "cristal": "1",
+      "padrao": "0",
+      "caract": "0",
+      "curso": "0",
+      "tofo": "0",
+      "urato": "0",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expected": {
+      "raw": {
+        "gota": 1
+      },
+      "level": "high",
+      "verdict": "critério suficiente"
+    },
+    "originalInput": {
+      "entrada": "1",
+      "cristal": "1",
+      "padrao": "0",
+      "caract": "0",
+      "curso": "0",
+      "tofo": "0",
+      "urato": "0",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Sem episódio articular: critério de entrada não preenchido",
+    "input": {
+      "entrada": "0",
+      "cristal": "0",
+      "padrao": "0",
+      "caract": "0",
+      "curso": "0",
+      "tofo": "0",
+      "urato": "0",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expected": {
+      "error": true
+    },
+    "originalInput": {
+      "entrada": "0",
+      "cristal": "0",
+      "padrao": "0",
+      "caract": "0",
+      "curso": "0",
+      "tofo": "0",
+      "urato": "0",
+      "liquido": "0",
+      "img_urato": "0",
+      "img_erosao": "0"
+    },
+    "expandedZeroOptions": []
+  }
+]

@@ -1,0 +1,326 @@
+{
+  "tool": {
+    "id": "criterios-acr-eular-gota",
+    "title": "Critérios ACR/EULAR 2015 para gota",
+    "short": "Classificação de gota",
+    "desc": "Aplique os critérios de classificação de gota ACR/EULAR 2015: critério de entrada, critério suficiente (cristais) e escore clínico, laboratorial e de imagem.",
+    "lead": "Classifica como gota o paciente com ao menos um episódio de artrite ou bursite periférica, pela presença de cristais ou por escore ≥ 8 pontos.",
+    "spec": [
+      "reumatologia",
+      "clinica-medica",
+      "ortopedia-e-traumatologia"
+    ],
+    "fields": [
+      [
+        "entrada",
+        "Critério de entrada: ao menos um episódio de edema, dor ou sensibilidade em articulação periférica ou bursa",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "1": "Sim"
+          }
+        }
+      ],
+      [
+        "cristal",
+        "Critério suficiente: cristais de urato monossódico em articulação ou bursa sintomática ou em tofo",
+        "radio",
+        {
+          "opts": {
+            "0": "Não pesquisado ou ausente",
+            "1": "Presente"
+          }
+        }
+      ],
+      [
+        "padrao",
+        "Articulações acometidas em algum episódio",
+        "sel",
+        {
+          "opts": {
+            "0": "Outras articulações",
+            "1": "Tornozelo ou médio-pé (sem 1ª metatarsofalângica)",
+            "2": "1ª metatarsofalângica (podagra)"
+          }
+        }
+      ],
+      [
+        "caract",
+        "Características do episódio: eritema local; dor intensa ao toque; grande dificuldade para andar ou usar a articulação",
+        "radio",
+        {
+          "opts": {
+            "0": "Nenhuma",
+            "1": "1",
+            "2": "2",
+            "3": "3"
+          }
+        }
+      ],
+      [
+        "curso",
+        "Episódios típicos (≥ 2 de: dor máxima em &lt; 24 h, resolução em ≤ 14 dias, resolução completa entre crises)",
+        "radio",
+        {
+          "opts": {
+            "0": "Nenhum",
+            "1": "Um episódio",
+            "2": "Recorrentes"
+          }
+        }
+      ],
+      [
+        "tofo",
+        "Tofo ao exame clínico",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "4": "Sim"
+          }
+        }
+      ],
+      [
+        "urato",
+        "Ácido úrico sérico (maior valor, sem hipouricemiante)",
+        "sel",
+        {
+          "opts": {
+            "0": "4 a &lt; 6 mg/dL",
+            "2": "6 a &lt; 8 mg/dL",
+            "3": "8 a &lt; 10 mg/dL",
+            "4": "≥ 10 mg/dL",
+            "-4": "&lt; 4 mg/dL"
+          }
+        }
+      ],
+      [
+        "liquido",
+        "Líquido sinovial de articulação sintomática",
+        "radio",
+        {
+          "opts": {
+            "0": "Não analisado",
+            "-2": "Negativo para urato"
+          }
+        }
+      ],
+      [
+        "img_urato",
+        "Depósito de urato na imagem (duplo contorno no ultrassom ou TC de dupla energia)",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "4": "Sim"
+          }
+        }
+      ],
+      [
+        "img_erosao",
+        "Erosão típica de gota na radiografia de mãos ou pés",
+        "radio",
+        {
+          "opts": {
+            "0": "Não",
+            "4": "Sim"
+          }
+        }
+      ]
+    ],
+    "formula": "<p>1) <strong>Entrada:</strong> ao menos um episódio de artrite ou bursite periférica. 2) <strong>Suficiente:</strong> cristais de urato monossódico = gota, sem pontuar. 3) <strong>Escore:</strong> padrão articular (1 ou 2) + características do episódio (0 a 3) + curso temporal (1 ou 2) + tofo (4) + urato sérico (−4 a 4) + líquido sinovial negativo (−2) + imagem de depósito de urato (4) + erosão radiográfica (4). Máximo 23; <strong>≥ 8 = gota</strong>.</p>",
+    "table": [
+      [
+        "Ácido úrico sérico",
+        "Pontos"
+      ],
+      [
+        "&lt; 4 mg/dL",
+        "−4"
+      ],
+      [
+        "4 a &lt; 6 mg/dL",
+        "0"
+      ],
+      [
+        "6 a &lt; 8 mg/dL",
+        "2"
+      ],
+      [
+        "8 a &lt; 10 mg/dL",
+        "3"
+      ],
+      [
+        "≥ 10 mg/dL",
+        "4"
+      ]
+    ],
+    "table_note": "Sensibilidade de 92% e especificidade de 89% na validação (Neogi 2015). Se possível, dose o ácido úrico ≥ 4 semanas após a crise e sem hipouricemiante; use o maior valor.",
+    "tips": [
+      "A punção articular com pesquisa de cristais continua sendo o padrão de referência: sempre que houver derrame acessível, puncione.",
+      "O ácido úrico pode estar normal durante a crise: um valor &lt; 6 mg/dL na crise não exclui gota; repita depois.",
+      "Artrite séptica pode coexistir com gota: febre, leucocitose e líquido purulento pedem Gram e cultura mesmo com cristais.",
+      "Critérios de classificação não substituem o julgamento clínico no paciente individual."
+    ],
+    "sources": [
+      [
+        "Neogi T et al. 2015 Gout classification criteria: an American College of Rheumatology/European League Against Rheumatism collaborative initiative. Arthritis Rheumatol, 2015.",
+        "https://doi.org/10.1002/art.39254"
+      ]
+    ],
+    "cases": [
+      [
+        "Podagra, 3 características, crises recorrentes, urato 9: 10 pontos (gota)",
+        {
+          "entrada": "1",
+          "cristal": "0",
+          "padrao": "2",
+          "caract": "3",
+          "curso": "2",
+          "tofo": "0",
+          "urato": "3",
+          "liquido": "0",
+          "img_urato": "0",
+          "img_erosao": "0"
+        },
+        {
+          "raw": {
+            "score": 10,
+            "gota": 1
+          },
+          "level": "high"
+        }
+      ],
+      [
+        "Tornozelo, 1 característica, 1 episódio, urato 7: 5 pontos",
+        {
+          "entrada": "1",
+          "cristal": "0",
+          "padrao": "1",
+          "caract": "1",
+          "curso": "1",
+          "tofo": "0",
+          "urato": "2",
+          "liquido": "0",
+          "img_urato": "0",
+          "img_erosao": "0"
+        },
+        {
+          "raw": {
+            "score": 5,
+            "gota": 0
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Podagra, 2 características, recorrente, urato 7, líquido negativo: 6 pontos",
+        {
+          "entrada": "1",
+          "cristal": "0",
+          "padrao": "2",
+          "caract": "2",
+          "curso": "2",
+          "tofo": "0",
+          "urato": "2",
+          "liquido": "-2",
+          "img_urato": "0",
+          "img_erosao": "0"
+        },
+        {
+          "raw": {
+            "score": 6,
+            "gota": 0
+          },
+          "level": "low"
+        }
+      ],
+      [
+        "Cristais de urato no líquido sinovial: gota (critério suficiente)",
+        {
+          "entrada": "1",
+          "cristal": "1",
+          "padrao": "0",
+          "caract": "0",
+          "curso": "0",
+          "tofo": "0",
+          "urato": "0",
+          "liquido": "0",
+          "img_urato": "0",
+          "img_erosao": "0"
+        },
+        {
+          "raw": {
+            "gota": 1
+          },
+          "level": "high",
+          "verdict": "critério suficiente"
+        }
+      ],
+      [
+        "Sem episódio articular: critério de entrada não preenchido",
+        {
+          "entrada": "0",
+          "cristal": "0",
+          "padrao": "0",
+          "caract": "0",
+          "curso": "0",
+          "tofo": "0",
+          "urato": "0",
+          "liquido": "0",
+          "img_urato": "0",
+          "img_erosao": "0"
+        },
+        {
+          "error": true
+        }
+      ]
+    ],
+    "batch": "clinica",
+    "kind": "Calculadora",
+    "config": null,
+    "areaId": "clinica",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/clinica.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 5,
+      "passed": 5,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "id": "criterios-acr-eular-gota",
+    "reason": "O ramo de critério suficiente retorna a palavra 'Gota' como saída principal. É necessário distinguir classificação para o instrumento, critério de entrada e diagnóstico individual. Suspender execução até uma revisão da apresentação e do contexto, sem converter critério de classificação em diagnóstico automático.",
+    "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4566153/",
+    "sourceTitle": "ACR/EULAR — 2015 Gout Classification Criteria",
+    "sourceDate": "2015-09-09",
+    "publisherRegion": "Estados Unidos / Europa",
+    "observedMain": [
+      "Gota"
+    ],
+    "status": "restricted",
+    "checkedAt": "2026-09-25",
+    "clinicalValidation": "not-performed",
+    "reviewScope": "Triagem da saída de software em casos fornecidos; identificação da publicação original e conferência limitada de seu contexto. Não é auditoria integral da regra, validação clínica ou revisão médica assinada.",
+    "implementationOutputAudit": "completed-on-supplied-cases",
+    "sourceReviewDepth": "original-reference-and-context-only",
+    "suppressLegacyFormula": true
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/clinica.php",
+    "sha256": "9dc60f9c51e1db27ff495c69b24d4422a87e42b8c9bc63551aac6a9bc704b2e0",
+    "bytes": 101245
+  },
+  "clinicalValidation": "not-performed"
+}
