@@ -1,7 +1,7 @@
 {
   "name": "@elucenia/tool-criterios-acr-eular-gota",
   "version": "0.1.0",
-  "description": "Critérios ACR/EULAR 2015 para gota · Elucenia: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
+  "description": "Critérios ACR/EULAR 2015 para gota · ELUCENIA: reprodução técnica de fórmula ou escore clínico, sem dependências, para navegador e Node.js.",
   "keywords": [
     "elucenia",
     "medical-calculator",
